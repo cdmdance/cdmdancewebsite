@@ -1,1 +1,257 @@
-test_content_v2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDM Dance | Ballroom &amp; Latin Dance Instructor Tampa Bay, FL</title>
+<style>
+:root{--gold:#C9A84C;--gold-light:#F0D080;--gold-dark:#A07830;--black:#0A0A0A;--dark:#111111;--dark2:#1A1A1A;--dark3:#222222;--off-white:#F5EDD6;--text-muted:rgba(255,255,255,0.55);}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:Georgia,serif;color:var(--off-white);background:var(--black);}
+.top-bar{background:var(--black);border-bottom:1px solid rgba(201,168,76,0.2);display:flex;justify-content:center;align-items:center;gap:32px;padding:9px 24px;font-size:13px;flex-wrap:wrap;}
+.top-bar a{color:rgba(255,255,255,0.6);text-decoration:none;display:flex;align-items:center;gap:7px;transition:color 0.2s;}
+.top-bar a:hover{color:var(--gold);}
+nav{background:rgba(10,10,10,0.97);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:10px 48px;position:sticky;top:0;z-index:999;border-bottom:1px solid rgba(201,168,76,0.15);}
+.logo-link{text-decoration:none;display:flex;align-items:center;}.logo-link img{height:70px;width:auto;object-fit:contain;}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.55);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.2s;}
+.nav-links a:hover{color:var(--gold);}
+.btn-nav{background:linear-gradient(135deg,var(--gold-dark),var(--gold),var(--gold-light)) !important;color:var(--black) !important;padding:11px 22px !important;border-radius:3px;font-weight:700 !important;box-shadow:0 2px 12px rgba(201,168,76,0.3);}
+.hamburger{display:none;flex-direction:column;cursor:pointer;gap:5px;background:none;border:none;}
+.hamburger span{width:25px;height:2px;background:var(--gold);display:block;}
+.btn-gold{background:linear-gradient(135deg,var(--gold-dark),var(--gold),var(--gold-light));color:var(--black);padding:15px 32px;border-radius:3px;text-decoration:none;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;box-shadow:0 4px 20px rgba(201,168,76,0.35);transition:opacity 0.2s;display:inline-block;}
+.btn-gold:hover{opacity:0.9;}
+.btn-outline-gold{border:2px solid var(--gold);color:var(--gold);padding:13px 30px;border-radius:3px;text-decoration:none;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;transition:all 0.2s;display:inline-block;}
+.btn-outline-gold:hover{background:var(--gold);color:var(--black);}
+section{padding:90px 80px;}
+.eyebrow{font-style:italic;color:var(--gold);font-size:18px;margin-bottom:12px;}
+.sec-title{font-size:clamp(28px,3.2vw,44px);color:var(--off-white);line-height:1.2;margin-bottom:18px;}
+.sec-sub{font-size:15px;color:var(--text-muted);line-height:1.8;max-width:700px;}
+.gold-rule{width:60px;height:2px;background:linear-gradient(90deg,var(--gold-dark),var(--gold-light));margin:16px 0 24px;}
+.gold-divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 48px;}
+.hero{background:radial-gradient(ellipse at 70% 40%,rgba(201,168,76,0.07) 0%,transparent 65%),var(--dark);min-height:90vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:80px;gap:60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;right:-60px;top:-60px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.12) 0%,transparent 70%);pointer-events:none;}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;font-style:italic;color:var(--gold);font-size:19px;margin-bottom:18px;}
+.hero-eyebrow::after{content:'';width:52px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);display:block;}
+.hero h1{font-size:clamp(36px,4vw,58px);line-height:1.1;margin-bottom:10px;color:var(--off-white);}
+.hero h1 .gold{color:var(--gold);}
+.hero-desc{font-size:15px;color:var(--text-muted);line-height:1.8;margin:20px 0 36px;max-width:480px;}
+.btn-row{display:flex;gap:16px;flex-wrap:wrap;}
+.hero-stats{display:flex;gap:40px;margin-top:48px;border-top:1px solid rgba(201,168,76,0.2);padding-top:32px;flex-wrap:wrap;}
+.stat-num{font-size:40px;font-weight:700;color:var(--gold);line-height:1;}
+.stat-lbl{font-size:11px;color:rgba(255,255,255,0.5);margin-top:4px;text-transform:uppercase;letter-spacing:1.5px;}
+.hero-img-col{display:flex;align-items:center;justify-content:center;position:relative;}
+.hero-img-box{width:100%;max-width:400px;aspect-ratio:3/4;background:linear-gradient(160deg,var(--dark3) 0%,rgba(201,168,76,0.2) 100%);border:1px solid rgba(201,168,76,0.25);border-radius:6px 70px 6px 70px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.hero-badge{position:absolute;bottom:28px;left:-16px;background:linear-gradient(135deg,var(--dark2),var(--dark3));border:1px solid rgba(201,168,76,0.4);padding:14px 18px;border-radius:6px;box-shadow:0 8px 30px rgba(0,0,0,0.5);text-align:center;min-width:130px;}
+.badge-num{font-size:22px;font-weight:700;color:var(--gold);}
+.badge-txt{font-size:10px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;}
+.intro-offer{background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.25);border-radius:6px;padding:18px 22px;margin-top:24px;display:inline-flex;align-items:center;gap:14px;}
+.intro-offer .offer-badge{background:linear-gradient(135deg,var(--gold-dark),var(--gold));color:var(--black);font-size:22px;font-weight:700;padding:8px 14px;border-radius:4px;white-space:nowrap;}
+.intro-offer p{font-size:13px;color:rgba(255,255,255,0.7);line-height:1.5;}
+.about-sec{background:var(--black);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-img{aspect-ratio:4/5;background:linear-gradient(160deg,var(--dark2) 0%,rgba(201,168,76,0.15) 100%);border:1px solid rgba(201,168,76,0.2);border-radius:4px 90px 4px 90px;display:flex;align-items:center;justify-content:center;font-size:80px;}
+.about-accent{position:absolute;top:-16px;right:-16px;width:90px;height:90px;border-radius:50%;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.15);}
+.about-text p{font-size:15px;color:var(--text-muted);line-height:1.85;margin-bottom:16px;}
+.why-sec{background:var(--dark);}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:48px;}
+.why-card{background:var(--dark2);border:1px solid rgba(201,168,76,0.15);border-bottom:2px solid var(--gold);padding:32px 24px;border-radius:4px;transition:transform 0.2s;}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(201,168,76,0.12);}
+.why-icon{font-size:36px;margin-bottom:14px;}
+.why-card h3{font-size:18px;color:var(--gold);margin-bottom:10px;}
+.why-card p{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.75;}
+.svc-sec{background:var(--black);}.svc-header{max-width:740px;margin-bottom:52px;}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.svc-card{background:var(--dark2);border:1px solid rgba(201,168,76,0.12);border-left:3px solid var(--gold);border-radius:4px;padding:34px 26px;transition:transform 0.2s;}
+.svc-card:hover{transform:translateY(-4px);}
+.svc-icon{font-size:38px;margin-bottom:16px;}
+.svc-card h3{font-size:19px;color:var(--off-white);margin-bottom:10px;}
+.svc-card p{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.8;}
+.instr-sec{background:linear-gradient(160deg,var(--dark3) 0%,#0A0800 100%);border-top:1px solid rgba(201,168,76,0.15);border-bottom:1px solid rgba(201,168,76,0.15);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.instr-img{aspect-ratio:3/4;background:linear-gradient(160deg,var(--dark2),rgba(201,168,76,0.18));border:1px solid rgba(201,168,76,0.25);border-radius:6px 80px 6px 80px;display:flex;align-items:center;justify-content:center;font-size:90px;}
+.instr-sec .sec-title{color:var(--off-white);}
+.instr-sec p{color:rgba(255,255,255,0.6);font-size:15px;line-height:1.85;margin-bottom:16px;}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0;}
+.tag{background:rgba(201,168,76,0.12);color:var(--gold);padding:5px 14px;border-radius:20px;font-size:12px;border:1px solid rgba(201,168,76,0.3);letter-spacing:0.5px;}
+.areas-sec{background:var(--dark);text-align:center;}
+.areas-sec .sec-sub{margin:0 auto 48px;}
+.areas-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;}
+.area-chip{background:var(--dark2);border:1px solid rgba(201,168,76,0.25);color:var(--gold);padding:10px 24px;border-radius:40px;font-size:13px;font-weight:600;transition:all 0.2s;letter-spacing:0.5px;}
+.area-chip:hover{background:var(--gold);color:var(--black);border-color:var(--gold);}
+.reviews-sec{background:var(--black);}
+.reviews-sec .sec-sub{margin-bottom:44px;}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.rev-card{background:var(--dark2);border:1px solid rgba(201,168,76,0.12);padding:30px 26px;border-radius:4px;position:relative;}
+.rev-card::before{content:'"';font-size:68px;color:rgba(201,168,76,0.12);position:absolute;top:8px;left:16px;line-height:1;font-family:Georgia,serif;}
+.stars{color:var(--gold);font-size:16px;margin-bottom:12px;}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.8;margin-bottom:16px;font-style:italic;}
+.reviewer{font-weight:700;color:var(--off-white);font-size:13px;}
+.rev-sub{font-size:11px;color:rgba(201,168,76,0.6);margin-top:2px;letter-spacing:0.5px;}
+.contact-sec{background:var(--dark);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.cinfo p{font-size:14px;color:var(--text-muted);line-height:1.85;margin-bottom:28px;}
+.cdetail{display:flex;align-items:flex-start;gap:14px;margin-bottom:20px;}
+.cicon{width:40px;height:40px;min-width:40px;background:linear-gradient(135deg,var(--gold-dark),var(--gold));border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--black);font-size:15px;}
+.cdetail strong{display:block;color:var(--off-white);margin-bottom:2px;font-size:13px;}
+.cdetail a,.cdetail span{color:var(--gold);text-decoration:none;font-size:13px;}
+.cform{background:var(--dark2);border:1px solid rgba(201,168,76,0.15);padding:38px 34px;border-radius:4px;box-shadow:0 4px 30px rgba(0,0,0,0.4);}
+.cform h3{font-size:19px;color:var(--off-white);margin-bottom:24px;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.fgroup{margin-bottom:16px;}
+.fgroup label{display:block;font-size:11px;font-weight:600;color:var(--gold);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;}
+.fgroup input,.fgroup textarea{width:100%;padding:10px 14px;background:var(--dark3);border:1px solid rgba(201,168,76,0.2);border-radius:3px;font-size:14px;font-family:Georgia,serif;color:var(--off-white);transition:border-color 0.2s;}
+.fgroup input::placeholder,.fgroup textarea::placeholder{color:rgba(255,255,255,0.25);}
+.fgroup input:focus,.fgroup textarea:focus{outline:none;border-color:var(--gold);}
+.fgroup textarea{resize:vertical;min-height:100px;}
+.fsub{width:100%;background:linear-gradient(135deg,var(--gold-dark),var(--gold),var(--gold-light));color:var(--black);border:none;padding:14px;border-radius:3px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;cursor:pointer;font-family:Georgia,serif;box-shadow:0 4px 16px rgba(201,168,76,0.3);}
+footer{background:var(--black);border-top:1px solid rgba(201,168,76,0.15);text-align:center;padding:48px;}
+footer img{height:80px;width:auto;object-fit:contain;margin-bottom:12px;}
+footer p{font-size:12px;color:rgba(255,255,255,0.5);margin-top:6px;}
+footer a{color:var(--gold);text-decoration:none;}
+.footer-tagline{color:var(--gold);font-style:italic;font-size:14px;margin-top:8px;}
+@media(max-width:900px){nav{padding:10px 20px;}.nav-links{display:none;flex-direction:column;position:absolute;top:92px;left:0;right:0;background:var(--black);padding:20px;border-bottom:1px solid rgba(201,168,76,0.15);gap:18px;}.nav-links.open{display:flex;}.hamburger{display:flex;}section{padding:56px 20px;}.hero{grid-template-columns:1fr;padding:56px 20px;min-height:auto;}.hero-img-col{display:none;}.about-sec,.instr-sec,.contact-sec{grid-template-columns:1fr;gap:36px;}.about-img-wrap,.instr-img{display:none;}.frow{grid-template-columns:1fr;}.top-bar{font-size:11px;gap:14px;}}
+</style>
+</head>
+<body>
+<div class="top-bar">
+<a href="tel:+17278514793">📞 (727) 851-4793</a>
+<a href="mailto:carlos@cdm.dance">✉️ carlos@cdm.dance</a>
+<a href="https://wa.me/17278514793" target="_blank">💬 WhatsApp</a>
+<a href="#areas">📍 Tampa Bay, FL</a>
+</div>
+<nav id="navbar">
+<a href="#home" class="logo-link"><img src="./logo.png" alt="CDM Dance Logo"></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#areas">Service Areas</a></li>
+<li><a href="#contact" class="btn-nav">Contact Us</a></li>
+</ul>
+<button class="hamburger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+<section class="hero" id="home">
+<div>
+<p class="hero-eyebrow">Dance With Us</p>
+<h1>Move with Passion.<br><span class="gold">Ballroom &amp; Latin Dance<br>Instructor in Tampa Bay, FL.</span></h1>
+<p class="hero-desc">Whether you are a complete beginner or looking to refine your technique, CDM Dance offers private and group ballroom &amp; Latin dance lessons in Tampa and surrounding areas — in-home or in-studio.</p>
+<div class="btn-row">
+<a href="tel:+17278514793" class="btn-gold">Call Now!</a>
+<a href="#contact" class="btn-outline-gold">Start Today!</a>
+</div>
+<div class="intro-offer">
+<div class="offer-badge">$25</div>
+<p><strong style="color:var(--gold-light);">Introductory Private Lesson</strong><br>One-on-one session — talk about your goals &amp; get dancing from day one.</p>
+</div>
+</div>
+<div class="hero-img-col">
+<div class="hero-img-box"><img src="./logo.png" alt="CDM Dance" style="width:80%;height:80%;object-fit:contain;opacity:0.35;"></div>
+<div class="hero-badge"><div class="badge-num">🎵 Ballroom</div><div class="badge-txt">&amp; Latin Dance<br>Tampa Bay</div></div>
+</div>
+</section>
+<section class="about-sec" id="about">
+<div class="about-img-wrap"><div class="about-accent"></div><div class="about-img">🕺</div></div>
+<div class="about-text">
+<p class="eyebrow">About Us</p>
+<h2 class="sec-title">Your Tampa Bay Dance Journey Starts Here.</h2>
+<div class="gold-rule"></div>
+<p>At CDM Dance, our mission is simple: to inspire confidence, connection, and joy through the art of ballroom and Latin dance. We serve the entire Tampa Bay region, bringing professional instruction directly to you — in your home or in-studio.</p>
+<p>Whether you're a complete beginner stepping onto the dance floor for the very first time, a couple preparing for your wedding dance, or someone looking to refine your technique, every lesson is tailored to your specific goals, pace, and personality.</p>
+<p>We believe dance should be accessible, fun, and deeply rewarding. That's why we offer flexible scheduling, in-home lessons, and a relaxed, encouraging environment where every student thrives.</p>
+<a href="#contact" class="btn-gold">Meet Your Instructor</a>
+</div>
+</section>
+<section class="why-sec">
+<p class="eyebrow">Why Choose Us</p>
+<h2 class="sec-title">Personalized Lessons. Lasting Impressions.</h2>
+<div class="gold-rule"></div>
+<p class="sec-sub">What sets CDM Dance apart is our personalized, one-on-one approach that blends professional technique with a supportive, fun atmosphere.</p>
+<div class="why-grid">
+<div class="why-card"><div class="why-icon">🎯</div><h3>Personalized Instruction</h3><p>Custom-tailored lessons that match your goals, pace, and comfort level — beginner to advanced, no judgment.</p></div>
+<div class="why-card"><div class="why-icon">🏠</div><h3>In-Home or In-Studio</h3><p>We come to you, or you come to us. Flexible options for wherever you're most comfortable learning.</p></div>
+<div class="why-card"><div class="why-icon">🤝</div><h3>Relaxed Atmosphere</h3><p>A fun, encouraging environment built on patience and positivity — so you can learn freely and enjoy every step.</p></div>
+<div class="why-card"><div class="why-icon">💰</div><h3>$25 Intro Lesson</h3><p>New students start with a one-on-one $25 introductory lesson to set your goals and get you dancing from day one.</p></div>
+</div>
+</section>
+<section class="svc-sec" id="services">
+<div class="svc-header">
+<p class="eyebrow">Our Services</p>
+<h2 class="sec-title">Ballroom &amp; Latin Dance Instruction</h2>
+<div class="gold-rule"></div>
+<p class="sec-sub">CDM Dance offers a full range of dance instruction for every goal — private coaching, group classes, wedding choreography, and dance hosting. All lessons available in-home or in-studio across Tampa Bay.</p>
+</div>
+<div class="svc-grid">
+<div class="svc-card"><div class="svc-icon">🤵</div><h3>Private Lessons</h3><p>One-on-one instruction fully tailored to your goals, schedule, and learning style. <strong style="color:var(--gold);">Intro lesson just $25.</strong></p></div>
+<div class="svc-card"><div class="svc-icon">👥</div><h3>Group Lessons</h3><p>Fun, social group classes where you'll learn ballroom and Latin styles in an upbeat, encouraging setting.</p></div>
+<div class="svc-card"><div class="svc-icon">💍</div><h3>Wedding Dances</h3><p>Make your first dance unforgettable. Personalized choreography designed for your song, style, and confidence level.</p></div>
+<div class="svc-card"><div class="svc-icon">🎤</div><h3>Dance Hosting</h3><p>Professional dance hosting for events, parties, and socials throughout the Tampa Bay area.</p></div>
+<div class="svc-card"><div class="svc-icon">🏠</div><h3>In-Home Lessons</h3><p>We bring the dance studio to you — expert instruction delivered right to your home at your convenience.</p></div>
+<div class="svc-card"><div class="svc-icon">🌐</div><h3>Social Dancing</h3><p>Learn Salsa, Bachata, Waltz, Foxtrot, Tango, Swing and more — build real-world dance skills that last a lifetime.</p></div>
+</div>
+</section>
+<section class="instr-sec">
+<div class="instr-img">💃</div>
+<div>
+<p class="eyebrow">Meet Your Instructor</p>
+<h2 class="sec-title">Carlos — Passion, Experience &amp; Dedication to Dance</h2>
+<div class="gold-rule"></div>
+<p>Carlos is the heart of CDM Dance — a professional ballroom and Latin dance instructor based in Tampa, FL, bringing years of experience and a genuine love for teaching to every single lesson.</p>
+<p>His teaching philosophy is simple: dance should feel good, build confidence, and connect people. Whether you've never danced before or you're working toward your wedding first dance, Carlos meets you exactly where you are.</p>
+<p>Carlos offers lessons across the entire Tampa Bay region — in your home or in-studio — making professional dance instruction more accessible than ever.</p>
+<div class="tags"><span class="tag">Salsa</span><span class="tag">Bachata</span><span class="tag">Waltz</span><span class="tag">Tango</span><span class="tag">Foxtrot</span><span class="tag">Swing</span><span class="tag">Cha-Cha</span><span class="tag">Rumba</span><span class="tag">Bolero</span></div>
+<p><em style="color:var(--gold-light);font-size:14px;">"Whether you are a complete beginner or looking to refine your technique, CDM Dance is here for you."</em></p>
+<br><a href="#contact" class="btn-gold">Book with Carlos</a>
+</div>
+</section>
+<section class="areas-sec" id="areas">
+<p class="eyebrow">Service Areas</p>
+<h2 class="sec-title">Proudly Serving the Tampa Bay Region</h2>
+<div class="gold-divider"></div>
+<p class="sec-sub">CDM Dance brings professional ballroom &amp; Latin dance instruction across the entire Tampa Bay area. In-home lessons available throughout the region — we come to you.</p>
+<div class="areas-grid">
+<div class="area-chip">Tampa, FL</div><div class="area-chip">St. Petersburg, FL</div><div class="area-chip">Clearwater, FL</div><div class="area-chip">Brandon, FL</div><div class="area-chip">Riverview, FL</div><div class="area-chip">Wesley Chapel, FL</div><div class="area-chip">Lutz, FL</div><div class="area-chip">Largo, FL</div><div class="area-chip">Dunedin, FL</div><div class="area-chip">Palm Harbor, FL</div><div class="area-chip">New Port Richey, FL</div><div class="area-chip">Land O' Lakes, FL</div>
+</div>
+</section>
+<section class="reviews-sec">
+<p class="eyebrow">Reviews</p>
+<h2 class="sec-title">What Our Tampa Bay Dancers Say</h2>
+<div class="gold-rule"></div>
+<p class="sec-sub">Hear from students who found their rhythm with CDM Dance.</p>
+<div class="rev-grid">
+<div class="rev-card"><div class="stars">★★★★★</div><p class="rev-text">Carlos made our wedding dance absolutely perfect. We went in with two left feet and came out feeling confident and elegant. He's incredibly patient and professional.</p><div class="reviewer">Sarah &amp; Mike T.</div><div class="rev-sub">WEDDING DANCE · TAMPA</div></div>
+<div class="rev-card"><div class="stars">★★★★★</div><p class="rev-text">I started with the $25 intro lesson and immediately knew I was in good hands. Carlos tailors everything to your level and the in-home option is so convenient.</p><div class="reviewer">Marcus R.</div><div class="rev-sub">PRIVATE LESSONS · ST. PETERSBURG</div></div>
+<div class="rev-card"><div class="stars">★★★★★</div><p class="rev-text">The in-home lessons are a game changer. No commute, no stress — Carlos brings the studio to you. I've recommended CDM Dance to everyone I know.</p><div class="reviewer">Jennifer L.</div><div class="rev-sub">IN-HOME LESSONS · CLEARWATER</div></div>
+</div>
+</section>
+<section class="contact-sec" id="contact">
+<div class="cinfo">
+<p class="eyebrow">Contact Us</p>
+<h2 class="sec-title">Start Your Dance Journey Today</h2>
+<div class="gold-rule"></div>
+<p>Ready to take the floor? Book your $25 introductory lesson or reach out with any questions. Carlos serves all of Tampa Bay — in-home or in-studio.</p>
+<div class="cdetail"><div class="cicon">📞</div><div><strong>Phone / WhatsApp</strong><a href="tel:+17278514793">(727) 851-4793</a></div></div>
+<div class="cdetail"><div class="cicon">✉️</div><div><strong>Email</strong><a href="mailto:carlos@cdm.dance">carlos@cdm.dance</a></div></div>
+<div class="cdetail"><div class="cicon">🌐</div><div><strong>Website</strong><a href="https://cdm.dance" target="_blank">cdm.dance</a></div></div>
+<div class="cdetail"><div class="cicon">📍</div><div><strong>Service Area</strong><span>Tampa, FL &amp; Surrounding Areas</span></div></div>
+<div class="cdetail"><div class="cicon">💬</div><div><strong>Facebook</strong><a href="https://www.facebook.com/people/CDM-Dance/61562768527154/" target="_blank">CDM Dance | Tampa FL</a></div></div>
+</div>
+<div class="cform">
+<h3>Send Us a Message</h3>
+<form onsubmit="event.preventDefault();alert('Thank you! Carlos will be in touch soon.');">
+<div class="frow"><div class="fgroup"><label>First Name *</label><input type="text" placeholder="Jane" required></div><div class="fgroup"><label>Last Name</label><input type="text" placeholder="Doe"></div></div>
+<div class="fgroup"><label>Email *</label><input type="email" placeholder="jane@example.com" required></div>
+<div class="fgroup"><label>Phone</label><input type="tel" placeholder="(727) 000-0000"></div>
+<div class="fgroup"><label>I'm interested in...</label><input type="text" placeholder="e.g. Wedding dance, private lessons..."></div>
+<div class="fgroup"><label>Message</label><textarea placeholder="Tell Carlos about your dance goals..."></textarea></div>
+<button type="submit" class="fsub">Send Message</button>
+</form>
+</div>
+</section>
+<footer>
+<img src="./logo.png" alt="CDM Dance Logo">
+<p class="footer-tagline">Proudly Serving the Tampa Bay Region</p>
+<p style="margin-top:14px;"><a href="tel:+17278514793">(727) 851-4793</a> &nbsp;·&nbsp; <a href="mailto:carlos@cdm.dance">carlos@cdm.dance</a> &nbsp;·&nbsp; <a href="https://cdm.dance" target="_blank">cdm.dance</a></p>
+<p style="margin-top:8px;"><a href="https://www.facebook.com/people/CDM-Dance/61562768527154/" target="_blank">Facebook: CDM Dance | Tampa FL</a></p>
+<p style="margin-top:18px;opacity:0.4;">© 2026 CDM Dance. All rights reserved. Tampa, FL.</p>
+</footer>
+</body>
+</html>
